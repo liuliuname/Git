@@ -1,0 +1,18 @@
+server:
+  port: 7811
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/liuliuname/config-repo-demo
+          username: liuliuname
+          password: liuliu230229

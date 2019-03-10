@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="concurrence" />
+        <module name="eurekaserver" />
+        <module name="java" />
+        <module name="seckill" />
+        <module name="springboot_js" />
+        <module name="springbootjs" />
+        <module name="springcloud_config_client" />
+        <module name="springcloud_config_server" />
+        <module name="springcloud_consumer" />
+        <module name="springcloud_provider" />
+        <module name="springcloud_provider2" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="example" target="1.5" />
+      <module name="springcloud_config" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eurekaserver" options="-parameters" />
+      <module name="seckill" options="-parameters" />
+      <module name="springbootjs" options="-parameters" />
+      <module name="springcloud_config" options="-parameters" />
+      <module name="springcloud_config_client" options="" />
+      <module name="springcloud_config_server" options="" />
+      <module name="springcloud_consumer" options="-parameters" />
+      <module name="springcloud_provider" options="-parameters" />
+      <module name="springcloud_provider2" options="-parameters" />
+    </option>
+  </component>
+</project>

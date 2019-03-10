@@ -1,0 +1,29 @@
+spring:
+ application:
+   name: springcloudserver
+   #使用配置文件名称
+ profiles:
+   active: server1
+ cloud:
+   config:
+     server:
+       git:
+         # uri: https://github.com/ityouknow/spring-cloud-starter/     # 配置git仓库的地址
+         uri: https://github.com/liuliuname/config-repo
+         #search-paths: config-repo                      # git仓库地址下的相对地址，可以配置多个，用,分割。
+         username: liuliuname                      # git仓库的账号
+         password: liuliu230229                    # git仓库的密码
+ rabbitmq:
+   host: 192.168.10.151
+   port: 5672
+   username: admin
+   password: admin
+#配置eureka 注册中心内容  相当于zookeeper
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/   ## 注册中心eurka地址
+#关闭安全验证
+management:
+  security:
+    enabled: false

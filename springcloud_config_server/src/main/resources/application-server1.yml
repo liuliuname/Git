@@ -1,0 +1,11 @@
+server:
+  port: 8040
+  instance:
+    hostname: server1
+    prefer-ip-address: false
+  # 测试时关闭自我保护机制，保证不可用服务及时踢出
+  enable-self-preservation: false
+
+
+
+
